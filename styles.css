@@ -5,6 +5,8 @@ html,body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   
 }
 
@@ -16,6 +18,8 @@ html,body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   text-align: center;
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
 }
 
 h1 {
