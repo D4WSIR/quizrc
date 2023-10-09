@@ -15,7 +15,7 @@ const quizData = [
       answer: 'Otimização dos recursos humanos, financeiros, de hardware e de software existentes',
     },
     {
-      question: 'Quais são os tipos de redes de computadores quanto à sua distribuição geográfica?',
+      question: 'What is the tallest mountain in the world?',
       options: ['Redes de televisão, redes de rádio, redes sociais', 'LAN, USB, Bluetooth', 'WAN, LAN, MAN', 'Internet, intranet, extranet'],
       answer: 'WAN, LAN, MAN',
     },
@@ -193,3 +193,10 @@ const quizData = [
     }
 
 random_bg_color();
+
+const resizeOps = () => {
+  document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+};
+
+resizeOps();
+window.addEventListener("resize", resizeOps);
